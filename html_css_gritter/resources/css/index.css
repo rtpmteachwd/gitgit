@@ -1,0 +1,37 @@
+body {
+    font-family: Helvetica;
+}
+
+.header {
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+}
+
+.banner {
+    background-image: url('/html_css_gritter/resources/images/pattern.jpeg');
+    background-repeat: no-repeat;
+    }
+
+.section-headings {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#brushes-bg {
+    background-color: mediumspringgreen;
+}
+
+#frames-bg {
+     background-color: lightcoral;
+}
+
+#paint-bg {
+    background-color: skyblue;
+}
+
+span {
+    font-weight: bold;
+    color: blue;
+}
