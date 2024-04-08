@@ -1,4 +1,4 @@
-const quotes = [
+let quotes = [
     "The only way to do great work is to love what you do. - Steve Jobs",
     "Innovation distinguishes between a leader and a follower. - Steve Jobs",
     "Your time is limited, don't waste it living someone else's life. - Steve Jobs",
@@ -11,10 +11,18 @@ const quotes = [
     "The only impossible journey is the one you never begin. - Tony Robbins"
 ];
 
-
-quote = Math.floor(Math.random() * quotes.length)
-generated_qote = quotes[quote]
+let show_quote = document.getElementById('quotes')
 let quote_choosen = document.getElementById('generate');
-quote_choosen.addEventListener('click', function(){
-    
-})
+
+function quoteSelector(){
+    let quote = Math.floor(Math.random() * quotes.length)
+    return quotes[quote];
+}
+
+function showQuote(){
+    show_quote.innerHTML = quoteSelector()
+    console.log('successful')
+}
+
+
+quote_choosen.addEventListener('click', showQuote)
